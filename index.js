@@ -1,6 +1,6 @@
 var request = require('request')
 var express = require('express')
-var app = express
+var app = express()
 var ttn = require("ttn")
 
 var appID = "thailora923mhz"
