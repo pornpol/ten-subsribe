@@ -1,6 +1,6 @@
 var request = require('request')
-var express = require('express')
-var app = express()
+// var express = require('express')
+// var app = express()
 var ttn = require("ttn")
 
 var appID = "thailora923mhz"
@@ -10,8 +10,7 @@ ttn.data(appID, accessKey)
   .then(function (client) {
     client.on("uplink", function (devID, payload) {
       console.log("Received uplink from ", devID)
-      console.log(payload)
-      //http.post("http://staging.enres.co/api/data_sensor_batch?access_token=8I3LaxaL8Yx5FASA4UpVh5I2swRoEO",[payload.payload_fields])
+      //console.log(payload)
       console.log(JSON.stringify(payload.payload_fields))
 
       var options = {
@@ -36,7 +35,7 @@ ttn.data(appID, accessKey)
     process.exit(1)
   })
 
-var port = process.env.PORT || 3000;
-app.listen(port, "0.0.0.0", function() {
-console.log("Listening on Port 3000");
-});
+// var port = process.env.PORT || 3000;
+// app.listen(port, "0.0.0.0", function() {
+// console.log("Listening on Port 3000");
+// });
