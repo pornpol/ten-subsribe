@@ -15,7 +15,7 @@ ttn.data(appID, accessKey)
       console.log(JSON.stringify(payload.payload_fields))
 
       var options = {
-        url: 'http://staging.enres.co/api/data_sensor_batch?access_token=8I3LaxaL8Yx5FASA4UpVh5I2swRoEO',
+        url: 'http://data.enres.co/v3/data_sensor_batch?access_token=8I3LaxaL8Yx5FASA4UpVh5I2swRoEO',
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
