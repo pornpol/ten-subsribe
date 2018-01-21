@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "next build",
-    "start": "next start -p ${PORT}"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/pornpol/ttn-subsribe/issues"
   },
-  "homepage": "https://github.com/pornpol/ttn-subsribe#readme"
+  "homepage": "https://github.com/pornpol/ttn-subsribe#readme",
+  "dependencies": {
+    "request": "^2.83.0",
+    "ttn": "^2.3.1"
+  }
 }
