@@ -1,6 +1,4 @@
 var request = require('request')
-var express = require('express')
-var app = express()
 var ttn = require("ttn")
 
 var appID = "thailora923mhz"
@@ -36,7 +34,4 @@ ttn.data(appID, accessKey)
     process.exit(1)
   })
 
-  var port = process.env.PORT || 3000;
-  app.listen(port, "0.0.0.0", function() {
-  console.log("Listening on Port 3000");
-  });
+setTimeout(function a(){}, 30000)
